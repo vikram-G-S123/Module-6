@@ -27,9 +27,27 @@ To write a Python program to create a `Counter` class that can increment the val
 
 ```
 
+# Name: Vikram GS
+# Reg No: 212222060296
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.__marks = marks   # private variable
+
+    def get_marks(self):
+        return self.__marks
+
+s = Student("Vikram", 90)
+
+print("Name:", s.name)
+print("Marks:", s.get_marks())
 ```
 
 ### OUTPUT
+Object count: 3
 
 
 ### RESULT
+
+Counter class successfully counts number of objects created.
