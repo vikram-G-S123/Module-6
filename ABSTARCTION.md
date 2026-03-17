@@ -34,11 +34,33 @@ To write a Python program to define the abstract base class named `Polygon` and 
 ### PROGRAM
 
 ```
+# Name: Vikram GS
+# Reg No: 212222060296
 
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def __init__(self, r):
+        self.r = r
+
+    def area(self):
+        return 3.14 * self.r * self.r
+
+c = Circle(5)
+print("Area:", c.area())
 
 ```
 
 ### OUTPUT
 
+Area: 78.5
+
 
 ### RESULT
+
+Abstraction is implemented successfully using abstract base class.
