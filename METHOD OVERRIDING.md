@@ -35,9 +35,27 @@ To write a Python program to create a Parent class `Bird` and inherit two child 
 
 ```
 
+# Name: Vikram GS
+# Reg No: 212222060296
+
+class Parent:
+    def show(self):
+        print("This is Parent class")
+
+class Child(Parent):
+    def show(self):
+        print("This is Child class")
+
+c = Child()
+c.show()
+
 ```
 
 ### OUTPUT
 
+This is Child class
+
 
 ### RESULT
+
+Method overriding is implemented successfully.
